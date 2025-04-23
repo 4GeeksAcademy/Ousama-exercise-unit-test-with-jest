@@ -10,18 +10,18 @@ let oneEuroIs = {
 // Declaramos una función con el nombre exacto "formEuroToDollar"
 const fromEuroToDollar = function(valueInEuro) {
     // Convertimos el valor a dólares
-    let valueInDollar = valueInEuro * 1.07;
+    let valueInDollar = valueInEuro * oneEuroIs.USD;
     // Retornamos el valor en dólares
     return valueInDollar;
 }
 
 const fromEuroToYen = function(valueInEuro) {
-    let valueInYen = valueInEuro * 156.5;
+    let valueInYen = valueInEuro * oneEuroIs.JPY;
     return valueInYen;
 }
 
 const fromEuroToPound = function(valueInEuro) {
-    let valueInPound = valueInEuro * 0.87;
+    let valueInPound = valueInEuro * oneEuroIs.GBP;
     return valueInPound;
 }
 
